@@ -1,0 +1,34 @@
+{
+    "name": "bonza/helper",
+    "description": "支持PHP7.2语法，常用帮助函数",
+    "type": "library",
+    "keywords": [
+        "helper",
+        "sdk",
+        "常用帮助函数"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "bonza",
+            "email": "bonzaphp@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "bonza\\helper\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.3-dev"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.5"
+    }
+}
