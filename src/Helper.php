@@ -39,4 +39,15 @@ class Helper
             throw new RuntimeException($e->getMessage());
         }
     }
+
+    /**
+     * 获取毫秒级别的时间戳
+     * @return float
+     */
+    public static function getMillisecond(): float
+    {
+        list($micro_sec, $sec) = explode(' ', microtime());
+        return (float)sprintf('%.0f', ((float) $micro_sec + (float) $sec) * 1000);
+    }
+
 }
